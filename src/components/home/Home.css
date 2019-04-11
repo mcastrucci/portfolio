@@ -238,6 +238,15 @@
         grid-row-end: initial;
     }
 
+    .home__right-panel__sc1:hover{
+        transform: none;
+    }
+    .home__right-panel__sc2:hover{
+        transform: none;
+    }
+    .home__right-panel__sc3:hover{
+        transform: none;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -282,7 +291,7 @@
 @media only screen and (max-width: 600px) {
 
     .home{
-        height: 200vh;
+        height: 220vh;
     }
 
     .home__left-panel{
@@ -296,11 +305,17 @@
     }
 
     .home__right-panel__box{
-        height: 30%;
-        width: 40%;
-        padding: 5rem;
+        height: 50%;
+        width: 35%;
+        padding: 25% 25%;
+        margin-right: 10%;
         font-size: 0.8rem;
     }  
+
+    .home__left-panel__center img:hover{
+        transform: rotateY(180deg) scale(2.5) translate(-30%, -50%);
+        
+    }
 }
 
 @media only screen and (max-width: 480px) {
