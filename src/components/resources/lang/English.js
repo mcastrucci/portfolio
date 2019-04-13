@@ -1,5 +1,8 @@
 export const WELCOME = 'WELCOME';
 export const ABOUT_ME = 'Hello! Mi name is Maximiliano Castrucci. Im a fullstack software engineer with strong knowledge in Java and javascript.';
+export const WELCOME_STARTUP = 'WELCOME TO MY PORTFOLIO!';
+export const ABOUT_ME_STARTUP = 'Hi There! my name is Maximiliano. and this is my portfolio, thanks for your visit!'
+export const HOME= "Home";
 
 export const SELECT_LANG = 'Select Language';
 export const ENGLISH = 'ENGLISH';

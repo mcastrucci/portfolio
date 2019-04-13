@@ -4,7 +4,8 @@
     background-position: center;
     background-size: cover;
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 1fr 2fr;
+    backface-visibility: hidden;
 }
 
 .home__left-panel{
@@ -39,27 +40,37 @@
     
 }
 
+
+/*Right panel  properties*/
+
 .home__right-panel{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20% 20% 20% 10% 10%;
+    grid-template-rows: 1fr;
     justify-content: center;
     align-content: center;
 }
 
-
-.home__button{
-    border-radius: 20%;
-    color: white;
-    align-self: end;
-    padding: 0.5rem;
-    box-shadow: #7c2f13 1px 2px 10px;
-    transition: 1s;
-    cursor: pointer;
+.home__right-panel__sc1{
+    background-color: #e45c01;
+    padding: 3rem;
 }
 
+.home__right-panel__sc2{
+    align-self: center;
+    background-color: #3498db;
+    padding: 2rem;
+}
+
+.home__right-panel__sc3{
+    background-color: #9b59b6;
+    padding: 5rem;
+}
+
+/*Right panel boxes */
+
 .home__right-panel__box{
-    height: 80%;
+    height: 40%;
     display: grid;
     grid-template-rows: 1fr 1fr;
     margin: 1rem;
@@ -76,13 +87,19 @@
     z-index: 1;
 }
 
+.home__button{
+    border-radius: 20%;
+    color: white;
+    align-self: end;
+    padding: 0.5rem;
+    box-shadow: #7c2f13 1px 2px 10px;
+    transition: 1s;
+    cursor: pointer;
+}
 
-
-.home__right-panel__sc1{
-    background-color: #e45c01;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    padding: 3rem;
+.home__right-panel__box:hover{
+    transform: scale(1.4);
+    z-index: 1;
 }
 
 .home__right-panel__sc1:hover{
@@ -104,28 +121,15 @@
     background-color: #eb5f01;
 }
 
-.home__right-panel__sc2{
-    background-color: #3498db;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    padding: 2rem;
-}
-
 .home__right-panel__sc2 .home__button{
     box-shadow: #2876aa 1px 2px 20px;
 }
+
 
 .home__right-panel__sc2 .home__button:hover{
     box-shadow: #2876aa 1rem 0.5rem 2rem;
     transform: scale(1.1);
     background-color: #39a5ec;
-}
-
-.home__right-panel__sc3{
-    background-color: #9b59b6;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    padding: 5rem;
 }
 
 .home__right-panel__sc3 .home__button{
@@ -139,190 +143,104 @@
     background-color: #ac60ca;
 }
 
-@media only screen and (max-width: 1400px) {
+
+@media only screen and (max-width: 1300px) {
+
+    .home{
+        height: 160vh;
+        display: grid;
+        grid-template-columns: 35% 65%;
+    }
+
+    .home__left-panel{
+        position: fixed;
+        width: 35%;
+    }
+
+    .home__right-panel{
+        display: grid;
+        grid-template-columns: 0.7fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-content: start;
+        grid-column-start: 2;
+    }
+
+    .home__right-panel__box{
+        border-radius: 25%;
+        height: 80%;
+        align-items: center;
+    }
+
     .home__right-panel__sc1{
-        padding: 2rem;
+        grid-row-start: auto;
+        grid-row-end: auto;
+        padding: 1rem;
     }
-    
+
     .home__right-panel__sc2{
-        padding: 1.5rem;
+        grid-row-start: auto;
+        grid-row-end: auto;
+        padding: 1rem;
+    }
+
+    .home__right-panel__sc3{
+        grid-row-start: auto;
+        grid-row-end: auto;
+        padding: 1rem;
+    }
+
+    .home__button{
+        align-self: center;
+    }
+
+    .home__right-panel__box:hover{
+        transform: none;
     }
     
-    .home__right-panel__sc3{
-        padding: 3rem;
+    .home__right-panel__sc1:hover{
+        transform: none;
+    }
+    
+    
+    .home__right-panel__sc3:hover{
+        transform: none;
+    }
+
+    @media only screen and (max-height: 600px) {
+        .home{
+            height: 100%;
+        }
     }
 }
 
 @media only screen and (max-width: 1250px) {
-    .home__left-panel__center h2{
-        font-size: 1.2rem;
-    }
-
-    .home__left-panel__center{
-        font-size: 1rem;
-    }
-
-    .home__right-panel__box{
-        font-size: 0.8rem;
-    }  
-
-    .home__left-panel__center img{
-        height: 35vh;
-        width: auto;
-        margin-top: 15%;
-    }
 
 }
 
 @media only screen and (max-width: 1000px) {
 
-    .home{
-        height: 140vh;
-    }
-    .home__left-panel{
-        height: 70vh;
-        width: 45%;
-        position: fixed;
-    }
-
-    .home__left-panel__center img{
-        height: 30vh;
-        width: auto;
-    }
-    
-    .home__right-panel__box{
-        height: 30%;
-        width: 40%;
-        padding: 4rem;
-        font-size: 0.8rem;
-    }   
-
-    .home__right-panel h2{
-        font-size: 1rem;
-    }
-
-    .home__right-panel{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        justify-items: center;
-        align-items: center;
-        grid-column-start: 2;
-    }
-    
-    .home__right-panel__sc1{
-
-        grid-row-start: initial;
-        grid-row-end: initial;
-    }
-
-    .home__right-panel__sc1:hover{
-
-        transform: scale(1.5);
-    }
-
-    .home__right-panel__sc2:hover{
-        transform: scale(1.5) translate(-20%);
-    }
-
-    .home__right-panel__sc3:hover{
-        transform: scale(1.5) translate(-30%, -30%);
-    }
-    
-    .home__right-panel__sc2{
-        grid-row-start: initial;
-        grid-row-end: initial;
-    }
-    
-    .home__right-panel__sc3{
-        grid-row-start: initial;
-        grid-row-end: initial;
-    }
-
-    .home__right-panel__sc1:hover{
-        transform: none;
-    }
-    .home__right-panel__sc2:hover{
-        transform: none;
-    }
-    .home__right-panel__sc3:hover{
-        transform: none;
-    }
 }
 
 @media only screen and (max-width: 800px) {
-
     .home{
-        display: grid;
-        grid-template-columns: 35% 65%;
+        grid-template-columns: 0fr 1fr;
     }
 
-    .home__left-panel__center h2{
-        font-size: 1.2rem;
+    .home__left-panel{
+        display: none;
     }
-
-    .home__left-panel__center{
-        font-size: 1rem;
-    }
-
-    .home__right-panel__box{
-        height: 40%;
-        padding: 2rem;
-        font-size: 0.8rem;
-    }   
-    
-    .home__right-panel__sc3 .home__button{
-        margin-top: 1.5rem;
-    }
-
-    .home__left-panel__center img{
-        height: 30vh;
-        width: auto;
-    }
-
 }
 
 @media only screen and (max-width: 700px) {
-    .home__left-panel__center img{
-        height: 25vh;
-        width: auto;
-    }
+
 }
 
 @media only screen and (max-width: 600px) {
 
-    .home{
-        height: 220vh;
-    }
-
-    .home__left-panel{
-        height: 70vh;
-        width: 34%;
-        position: fixed;
-    }
-
-    .home__left-panel__center img{
-        height: 16vh;
-    }
-
-    .home__right-panel__box{
-        height: 50%;
-        width: 35%;
-        padding: 25% 25%;
-        margin-right: 10%;
-        font-size: 0.8rem;
-    }  
-
-    .home__left-panel__center img:hover{
-        transform: rotateY(180deg) scale(2.5) translate(-30%, -50%);
-        
-    }
 }
 
 @media only screen and (max-width: 480px) {
-    .home__left-panel__center img{
-        height: 12vh;
-    }
-    
+
 }
 
 

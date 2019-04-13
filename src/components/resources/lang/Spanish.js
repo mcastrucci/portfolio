@@ -1,6 +1,10 @@
 export const WELCOME = 'BIENVENIDO';
 export const ABOUT_ME = 'Hola! Mi Nombre Es Maximiliano. Soy Desarrollador de software Full stack con fuertes conocimientos de Java y Javascript'
 
+export const WELCOME_STARTUP = 'BIENVENIDO A MI PORTAFOLIO!';
+export const ABOUT_ME_STARTUP = 'Hola! Mi Nombre Es Maximiliano. Soy Desarrollador de software Full stack. Gracias por tu visita!'
+export const HOME= "Inicio";
+
 export const SELECT_LANG = 'Selecciona otro Lenguaje';
 export const ENGLISH = 'INGLES';
 export const SPANISH = 'ESPAÑOL';
