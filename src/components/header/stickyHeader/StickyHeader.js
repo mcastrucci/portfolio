@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './StickyHeader.css';
 import LangSelector from '../../lang-selector/LangSelector';
+import Social from '../social/Social';
 
 import { 
     HOME as HOME_ES,
@@ -53,6 +54,7 @@ class StickyHeader extends Component {
                                 <li>{spanishLang ? SEE_WORKS_ES : englishLang ? SEE_WORKS_EN : 'no translation'}</li>
                                 <li>{spanishLang ? RESUME_BUTTON_ES : englishLang ? RESUME_BUTTON_EN : 'no translation'}</li>
                             </ul>
+                            <Social/>
                         </div>
                 }
             

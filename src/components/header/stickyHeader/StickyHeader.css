@@ -37,7 +37,7 @@
     z-index: 1;
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 0.5fr 0.5fr 1fr;
+    grid-auto-rows: 0.5fr 0.5fr 1fr 0.8fr;
 }
 
 .sticky-header__drop-menu--menu{
@@ -68,6 +68,19 @@
 .sticky-header__drop-menu li:hover{
     background-color: rgb(255, 255, 255, .3);
 }
+
+
+/*social*/
+.header__social{
+    justify-self: center;
+    align-self: center;
+}
+
+/*social*/
+.sticky-header__drop-menu .header__social i{
+    font-size: 1rem;
+}
+
 
 @media only screen and (max-width: 970px) {
     .sticky-header{

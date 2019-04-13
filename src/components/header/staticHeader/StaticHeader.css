@@ -9,62 +9,10 @@
     font-family: 'Courgette', cursive;
 }
 
-.header__name, .header__social{
+.header__name{
     font-family: 'Courgette', cursive;
     font-size: 1.3rem;
     margin-left: 3rem;
-}
-
-
-.header__social{
-    margin-right: 10%;
-    justify-self: end;
-}
-
-.header__social li{
-    font-size: 2rem;
-    color: white;
-    border-radius: 20px;
-    list-style: none;
-    display: inline-block;
-    cursor: pointer;
-}
-
-/*social*/
-.header__social .fa-facebook, .header__social .fa-linkedin, .header__social .fa-github{
-    color: white;
-    padding: 1.4rem;
-    border-radius: 40%;
-    transition: 1s;
-}
-
-.header__social .fa-facebook{
-    background-color: #3b5998;
-    margin-left: 1rem;
-}
-
-.header__social .fa-linkedin{
-    background-color: #007bb5;
-}
-
-.header__social .fa-facebook:hover{
-    background-color: #304677;
-    transform: scale(1.1);
-}
-
-.header__social .fa-linkedin:hover{
-    background-color: #025379;
-    transform: scale(1.1);
-}
-
-.header__social .fa-github{
-    background-color: rgb(0, 0, 0);
-    margin-left: 1rem;
-}
-
-.header__social .fa-github:hover{
-    background-color: rgb(50, 50, 50);
-    transform: scale(1.1);
 }
 
 
