@@ -7,8 +7,8 @@ class StaticHeader extends Component {
     
     render (){
         return (
-            <div className="header__static"> 
-                        <div className="header__name"><h1>Maximiliano Castrucci</h1></div>
+                <div className="header__static"> 
+                        <div className="header__name" onClick={()=> this.props.onRouteChange('home')}><h1>Maximiliano Castrucci</h1></div>
                         <LangSelector lang={this.props.lang} togleLang={this.props.togleLang}/>
                         <Social/>
                 </div>

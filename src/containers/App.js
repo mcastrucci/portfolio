@@ -3,6 +3,7 @@ import './App.css';
 import Home from '../components/home/Home';
 import Header from '../components/header/Header';
 import Startup from '../components/startup/Startup';
+import About from '../components/about-me/About';
 
 class App extends Component {
   constructor(){
@@ -38,10 +39,12 @@ class App extends Component {
           languageSelected === false &&
             <Startup lang={language} togleLang={this.onLangChange} selectLang={selectLang}/>
         }
-        <Header lang={language} togleLang={this.onLangChange}/>
+        <Header lang={language} togleLang={this.onLangChange} onRouteChange={this.onRouteChange}/>
         {
           route === 'home' ?
             <Home onRouteChange={this.onRouteChange} lang={language}/>
+          :route === 'about-me' ?
+            <About onRouteChange={this.onRouteChange} lang={language}/>
           :
           <div>nothing to see</div>
         }

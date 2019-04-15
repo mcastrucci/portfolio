@@ -44,7 +44,7 @@ class Home extends Component {
                                 <p>
                                     {englishLang ? ABOUT_ME_RESUME_EN : (spanishLang) ? ABOUT_ME_RESUME_ES: "no translation"}
                                 </p>
-                                <h2 className="home__button">{englishLang ? ABOUT_ME_BUTTON_EN : (spanishLang) ? ABOUT_ME_BUTTON_ES: "no translation"}</h2>
+                                <h2 className="home__button" onClick={()=> this.props.onRouteChange ('about-me')}>{englishLang ? ABOUT_ME_BUTTON_EN : (spanishLang) ? ABOUT_ME_BUTTON_ES: "no translation"}</h2>
                             </div>
                             <div className="home__right-panel__box home__right-panel__sc2">
                                 <p>

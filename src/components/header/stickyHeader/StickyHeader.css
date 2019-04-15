@@ -71,9 +71,10 @@
 
 
 /*social*/
-.header__social{
+.sticky-header__drop-menu .header__social{
     justify-self: center;
     align-self: center;
+    background-color: rgb(255, 255, 255, 0);
 }
 
 /*social*/
@@ -81,6 +82,26 @@
     font-size: 1rem;
 }
 
+
+.sticky-header__drop-menu .header__social li{
+    width: 25%;
+    padding: 0;
+    background-color: rgb(255, 255, 255, 0);
+}
+
+.sticky-header__drop-menu .header__social li:hover{
+    background-color: rgb(255, 255, 255, 0);
+    transform: scale(1.1);
+}
+
+.sticky-header__drop-menu .header__social .fa-github{
+    margin-left: 0rem;
+    background-color: rgb(255, 69, 0, .3);
+}
+
+.sticky-header__drop-menu .header__social .fa-facebook{
+    margin-left: 0rem;
+}
 
 @media only screen and (max-width: 970px) {
     .sticky-header{

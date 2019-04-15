@@ -9,8 +9,8 @@ class Header extends Component {
     render (){
         return (
             <div className="header">
-                <StaticHeader lang={this.props.lang} togleLang={this.props.togleLang}/>
-                <StickyHeader lang={this.props.lang} togleLang={this.props.togleLang}/>
+                <StaticHeader lang={this.props.lang} togleLang={this.props.togleLang} onRouteChange={this.props.onRouteChange}/>
+                <StickyHeader lang={this.props.lang} togleLang={this.props.togleLang} onRouteChange={this.props.onRouteChange}/>
             </div>
         );
     }
