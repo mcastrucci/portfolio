@@ -4,6 +4,7 @@ import Home from '../components/home/Home';
 import Header from '../components/header/Header';
 import Startup from '../components/startup/Startup';
 import About from '../components/about-me/About';
+import Footer from '../components/footer/Footer';
 
 class App extends Component {
   constructor(){
@@ -16,6 +17,7 @@ class App extends Component {
   }
 
   onRouteChange = (newRoute) => {
+    window.scrollTo(0,0);
     this.setState({route: newRoute});
   }
 
@@ -48,6 +50,7 @@ class App extends Component {
           :
           <div>nothing to see</div>
         }
+        <Footer/>
       </div>
     );
   }

@@ -1,0 +1,67 @@
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #222f3e;
+    height: 15vh;
+}
+
+.footer img{
+    height: 40px;
+    width: 40px;
+    animation-name: reactAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.footer__react{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer__react h3{
+    font-size: 1.5rem;
+    color: #61dafb;
+}
+
+.footer p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+@media only screen and (max-height: 650px){
+    .header__static{
+        height: 25vh;
+    }
+}
+
+@media only screen and (max-height: 400px){
+    .header__static{
+        height: 35vh;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .header__static{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 550px) {
+
+}
+
+@keyframes reactAnimation {
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
