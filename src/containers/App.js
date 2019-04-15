@@ -6,6 +6,7 @@ import Startup from '../components/startup/Startup';
 import About from '../components/about-me/About';
 import Footer from '../components/footer/Footer';
 import Resume from '../components/resume/Resume';
+import MyWorks from '../components/my-works/MyWorks';
 
 class App extends Component {
   constructor(){
@@ -50,6 +51,8 @@ class App extends Component {
             <About onRouteChange={this.onRouteChange} lang={language}/>
           :route === 'resume' ?
             <Resume onRouteChange={this.onRouteChange} lang={language}/>
+          :route === 'my-works' ?
+            <MyWorks onRouteChange={this.onRouteChange} lang={language}/>
           :
           <div>nothing to see</div>
         }

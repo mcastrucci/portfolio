@@ -1,0 +1,86 @@
+.my-works{
+    background-color: #3498db;
+    padding: 5%;
+}
+
+.my-works h1{
+    font-size: 4rem;
+    color: black;
+    font-family: 'Courgette', cursive;
+}
+
+.my-works__iframes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100vh;
+    margin-top: 2rem;
+}
+
+.my-works__iframes iframe{
+    height: 80vh;
+    width: 90%;
+}
+
+.my-works__work-card{
+    border: #387eac solid 0.2rem;
+    border-radius: 4%;
+    margin-left: 2%;
+    box-shadow: 5px 10px #2c81b9;
+}
+
+.my-works__work-card h2{
+    font-size: 2rem;
+    text-decoration: underline;
+    color: black;
+    font-family: 'Courgette', cursive;
+}
+
+.my-works__work-card p{
+    font-size: 1rem;
+    color: rgb(207, 207, 207);
+    font-family: 'Courgette', cursive;
+    padding: 1%;
+}
+
+@media only screen and (max-width: 1000px){
+    .my-works{
+        padding: 5%;
+    }
+    
+    .my-works h1{
+        font-size: 2rem;
+    }
+    
+    .my-works__iframes{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+        margin-top: 2rem;
+    }
+    
+    .my-works__iframes iframe{
+        height: 80vh;
+        width: 90%;
+    }
+    
+    .my-works__work-card{
+        margin-bottom: 5%;
+    }
+    
+    .my-works__work-card h2{
+        font-size: 1.2rem;
+        text-decoration: underline;
+        color: black;
+        font-family: 'Courgette', cursive;
+    }
+    
+    .my-works__work-card p{
+        font-size: 1rem;
+        color: rgb(207, 207, 207);
+        font-family: 'Courgette', cursive;
+        padding: 1%;
+    }
+}

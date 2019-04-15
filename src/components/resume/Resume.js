@@ -6,7 +6,7 @@ class Resume extends Component {
     render (){
         return (
             <div className="resume">
-                    <iframe className="resume__iframe" src="https://drive.google.com/embeddedfolderview?id=1UxznRGpdso0SZ2KwxRaKyEOl06-2Y-TE#list" width="600" height="500" frameBorder="0"></iframe>
+                    <iframe className="resume__iframe" title="Resume" src="https://drive.google.com/embeddedfolderview?id=1UxznRGpdso0SZ2KwxRaKyEOl06-2Y-TE#grid" width="100%" height="500" frameBorder="0"></iframe>
             </div> 
         );
     }

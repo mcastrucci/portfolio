@@ -56,7 +56,7 @@ class StickyHeader extends Component {
                             <ul>
                                 <li onClick={()=> this.changeRoute ('home')}>{spanishLang ? HOME_ES : englishLang ? HOME_EN : 'no translation'}</li>
                                 <li onClick={()=> this.changeRoute ('about-me')}>{spanishLang ? ABOUT_ME_BUTTON_ES : englishLang ? ABOUT_ME_BUTTON_EN : 'no translation'}</li>
-                                <li>{spanishLang ? SEE_WORKS_ES : englishLang ? SEE_WORKS_EN : 'no translation'}</li>
+                                <li onClick={()=> this.changeRoute ('my-works')}>{spanishLang ? SEE_WORKS_ES : englishLang ? SEE_WORKS_EN : 'no translation'}</li>
                                 <li onClick={()=> this.changeRoute ('resume')}>{spanishLang ? RESUME_BUTTON_ES : englishLang ? RESUME_BUTTON_EN : 'no translation'}</li>
                             </ul>
                             <Social/>
