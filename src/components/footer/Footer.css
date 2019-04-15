@@ -33,30 +33,10 @@
 }
 
 
-@media only screen and (max-height: 650px){
-    .header__static{
-        height: 25vh;
+@media only screen and (max-height: 800px){
+    .footer{
+        height: 20vh;
     }
-}
-
-@media only screen and (max-height: 400px){
-    .header__static{
-        height: 35vh;
-    }
-}
-
-@media only screen and (max-width: 970px) {
-    .header__static{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-
-}
-
-@media only screen and (max-width: 550px) {
-
 }
 
 @keyframes reactAnimation {

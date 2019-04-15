@@ -1,32 +1,48 @@
 import React, { Component } from 'react';
 import './MyWorks.css';
 
+
+import { 
+    MY_WORKS_TITLE as MY_WORKS_TITLE_ES,
+    MY_WORKS_REIKI_DESCRIPTION as MY_WORKS_REIKI_DESCRIPTION_ES,
+    MY_WORKS_OMNIFOOD_DESCRIPTION as MY_WORKS_OMNIFOOD_DESCRIPTION_ES,
+    MY_WORKS_SMARTBRAIN_DESCRIPTION as MY_WORKS_SMARTBRAIN_DESCRIPTION_ES,
+} from '../resources/lang/Spanish'
+import { 
+    MY_WORKS_TITLE as MY_WORKS_TITLE_EN,
+    MY_WORKS_REIKI_DESCRIPTION as MY_WORKS_REIKI_DESCRIPTION_EN,
+    MY_WORKS_OMNIFOOD_DESCRIPTION as MY_WORKS_OMNIFOOD_DESCRIPTION_EN,
+    MY_WORKS_SMARTBRAIN_DESCRIPTION as MY_WORKS_SMARTBRAIN_DESCRIPTION_EN,
+} from '../resources/lang/English'
+
 class MyWorks extends Component {
     
     render (){
+        const spanishLang= this.props.lang === 'es';
+        const englishLang= this.props.lang === 'en';
         return (
             <div className="my-works">
-                    <h1>Check some of my works!</h1>
+                    <h1>{englishLang ? MY_WORKS_TITLE_EN : (spanishLang) ? MY_WORKS_TITLE_ES: "no translation"}</h1>
                     <div className="my-works__iframes">
                         <div className="my-works__work-card">
-                            <h2>Omnifood</h2>
-                            <iframe className="my-works" title="omnifood" src="http://dev-omnifood.pantheonsite.io/" frameBorder="0"></iframe>
-                            <p>
-                                A good example of Landing page, this is pure CSS, html and Javascript
-                            </p>
-                        </div>
-                        <div className="my-works__work-card">
-                            <h2>Reiki Usui Terapia</h2>
+                            <a href="http://www.reikiusuiterapia.com">Reiki Usui Terapia</a>
                             <iframe className="my-works" title="reikiusui" src="http://www.reikiusuiterapia.com" frameBorder="0"></iframe>
                             <p>
-                                Reiki Usui Terapia is a Reiki page with a beautifull front end in React
+                                {englishLang ? MY_WORKS_REIKI_DESCRIPTION_EN : (spanishLang) ? MY_WORKS_REIKI_DESCRIPTION_ES: "no translation"}
                             </p>
                         </div>
                         <div className="my-works__work-card">
-                            <h2>Smart Brain</h2>
+                            <a href="http://dev-omnifood.pantheonsite.io/">Omnifood</a>
+                            <iframe className="my-works" title="omnifood" src="http://dev-omnifood.pantheonsite.io/" frameBorder="0"></iframe>
+                            <p>
+                            {englishLang ? MY_WORKS_OMNIFOOD_DESCRIPTION_EN : (spanishLang) ? MY_WORKS_OMNIFOOD_DESCRIPTION_ES: "no translation"}
+                            </p>
+                        </div>
+                        <div className="my-works__work-card">
+                            <a href="https://smart-brain-fe-m.herokuapp.com/">Smart Brain</a>
                             <iframe className="my-works" title="smart-brain" src="https://smart-brain-fe-m.herokuapp.com/" frameBorder="0"></iframe>
                             <p>
-                                This is a good React example running in Heroku with a server in Express Js and a react FE
+                                {englishLang ? MY_WORKS_SMARTBRAIN_DESCRIPTION_EN : (spanishLang) ? MY_WORKS_SMARTBRAIN_DESCRIPTION_ES: "no translation"}
                             </p>
                         </div>
                     </div>

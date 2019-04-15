@@ -30,7 +30,7 @@
     box-shadow: 5px 10px #2c81b9;
 }
 
-.my-works__work-card h2{
+.my-works__work-card a{
     font-size: 2rem;
     text-decoration: underline;
     color: black;
