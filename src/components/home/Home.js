@@ -50,13 +50,13 @@ class Home extends Component {
                                 <p>
                                     {englishLang ? SEE_WORKS_RESUME_EN : (spanishLang) ? SEE_WORKS_RESUME_ES: "no translation"}
                                 </p>
-                                <h2 className="home__button">{englishLang ? SEE_WORKS_EN : (spanishLang) ? SEE_WORKS_ES: "no translation"}</h2>
+                                <h2 className="home__button" >{englishLang ? SEE_WORKS_EN : (spanishLang) ? SEE_WORKS_ES: "no translation"}</h2>
                             </div>
                             <div className="home__right-panel__box home__right-panel__sc3">
                                 <p>
                                     {englishLang ? RESUME_RESUME_EN : (spanishLang) ? RESUME_RESUME_ES: "no translation"}
                                 </p>
-                                <h2 className="home__button">{englishLang ? RESUME_BUTTON_EN : (spanishLang) ? RESUME_BUTTON_ES: "no translation"}</h2>
+                                <h2 className="home__button" onClick={()=> this.props.onRouteChange ('resume')}>{englishLang ? RESUME_BUTTON_EN : (spanishLang) ? RESUME_BUTTON_ES: "no translation"}</h2>
                             </div>
                     
                     </div>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Footer.css'
-import Social from '../header/social/Social';
 import reactIcon from './images/react.svg'
 
 class Footer extends Component {
