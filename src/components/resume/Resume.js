@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import './Resume.css';
+import ReactGA from 'react-ga';
 
 class Resume extends Component {
+
+    componentDidMount(){
+        ReactGA.pageview('/resume');
+    }
     
     render (){
         return (

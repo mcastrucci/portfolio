@@ -15,7 +15,13 @@ import {
     MY_WORKS_SMARTBRAIN_DESCRIPTION as MY_WORKS_SMARTBRAIN_DESCRIPTION_EN,
 } from '../resources/lang/English'
 
+import ReactGA from 'react-ga';
+
 class MyWorks extends Component {
+
+    componentDidMount(){
+        ReactGA.pageview('/my-works');
+    }
     
     render (){
         const spanishLang= this.props.lang === 'es';

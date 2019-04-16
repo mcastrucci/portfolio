@@ -7,6 +7,7 @@ import About from '../components/about-me/About';
 import Footer from '../components/footer/Footer';
 import Resume from '../components/resume/Resume';
 import MyWorks from '../components/my-works/MyWorks';
+import ReactGA from 'react-ga';
 
 class App extends Component {
   constructor(){
@@ -20,6 +21,10 @@ class App extends Component {
 
   onRouteChange = (newRoute) => {
     window.scrollTo(0,0);
+    ReactGA.event({
+      category: 'screen changes',
+      action: newRoute
+    });
     this.setState({route: newRoute});
   }
 

@@ -23,8 +23,14 @@ import {
 
 } from '../resources/lang/English'
 
+import ReactGA from 'react-ga';
+
 class About extends Component {
     
+    componentDidMount(){
+        ReactGA.pageview('/about-me');
+    }
+
     render (){
         const spanishLang= this.props.lang === 'es';
         const englishLang= this.props.lang === 'en';

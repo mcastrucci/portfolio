@@ -21,9 +21,16 @@ import {
     RESUME_RESUME as RESUME_RESUME_EN,
 } from '../resources/lang/English'
 
+import ReactGA from 'react-ga';
+
 import me from './images/me.jpg';
 
 class Home extends Component {
+
+    
+    componentDidMount(){
+        ReactGA.pageview('/home');
+    }
     
     render (){
         const spanishLang= this.props.lang === 'es';
